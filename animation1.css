@@ -1,0 +1,101 @@
+@-ms-keyframes slideLR {from {left: 50px} to {left: 400px}}
+@-moz-keyframes slideLR {from {left: 50px} to {left: 400px}}
+@-webkit-keyframes slideLR {from {left: 50px} to {left: 400px}}
+@-keyframes slideLR {from {left: 50px} to {left: 400px}}
+
+@-ms-keyframes slideRL {from {left: 400px} to {left: 50px}}
+@-moz-keyframes slideRL {from {left: 400px} to {left: 50px}}
+@-webkit-keyframes slideRL {from {left: 400px} to {left: 50px}}
+@-keyframes slideRL {from {left: 400px} to {left: 50px}}
+
+@-ms-keyframes slideUD {from {top: 50px} to {top: 400px}}
+@-moz-keyframes slideUD {from {top: 50px} to {top: 400px}}
+@-webkit-keyframes slideUD {from {top: 50px} to {top: 400px}}
+@-keyframes slideUD {from {top: 50px} to {top: 400px}}
+
+@-ms-keyframes slideDU {from {top: 400px} to {top: 50px}}
+@-moz-keyframes slideDU {from {top: 400px} to {top: 50px}}
+@-webkit-keyframes slideDU {from {top: 400px} to {top: 50px}}
+@-keyframes slideDU {from {top: 400px} to {top: 50px}}
+
+/* Genereal object styling */
+
+div {
+	position: absolute; 
+	height: 120px; 
+	width: 120px; 
+	border: 3px solid black;
+}
+
+.circle {
+	background-color: yellow;
+	z-index: 2;
+	border-radius: 65px;
+}
+
+.box {
+	background-color: red;
+	z-index: 1;
+}
+
+/* Specific box styling */
+
+.top-left {
+	top: 50px;
+	left: 50px;
+}
+
+.top-right {
+	top: 50px;
+	left: 400px;
+}
+
+.bottom-left {
+	top: 400px;
+	left: 50px;
+}
+
+.bottom-right {
+	top: 400px;
+	left: 400px;
+}
+
+/* Specific circle styling */
+
+.top {
+	left: 50px;
+	top: 50px;
+	-ms-animation: slideLR 3s alternate infinite;
+	-moz-animation: slideLR 3s alternate infinite;
+	-webkit-animation: slideLR 3s alternate infinite;
+	-o-animation: slideLR 3s alternate infinite;
+	animation: slideLR 3s alternate infinite;
+}
+
+.bottom {
+	left: 400px;
+	top: 400px;
+	-ms-animation: slideRL 3s alternate infinite;
+	-moz-animation: slideRL 3s alternate infinite;
+	-webkit-animation: slideRL 3s alternate infinite;
+	-o-animation: slideRL 3s alternate infinite;
+	animation: slideRL 3s alternate infinite;	
+}
+
+.left {
+	left: 50px;
+	-ms-animation: slideDU 3s alternate infinite;
+	-moz-animation: slideDU 3s alternate infinite;
+	-webkit-animation: slideDU 3s alternate infinite;
+	-o-animation: slideDU 3s alternate infinite;
+	animation: slideDU 3s alternate infinite;	
+}
+
+.right {
+	left: 400px;
+	-ms-animation: slideUD 3s alternate infinite;
+	-moz-animation: slideUD 3s alternate infinite;
+	-webkit-animation: slideUD 3s alternate infinite;
+	-o-animation: slideUD 3s alternate infinite;
+	animation: slideUD 3s alternate infinite;	
+}
