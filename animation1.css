@@ -1,17 +1,25 @@
+/* Left-Right movement */
+
 @-ms-keyframes slideLR {from {left: 50px} to {left: 400px}}
 @-moz-keyframes slideLR {from {left: 50px} to {left: 400px}}
 @-webkit-keyframes slideLR {from {left: 50px} to {left: 400px}}
 @-keyframes slideLR {from {left: 50px} to {left: 400px}}
+
+/* Right-Left movement */
 
 @-ms-keyframes slideRL {from {left: 400px} to {left: 50px}}
 @-moz-keyframes slideRL {from {left: 400px} to {left: 50px}}
 @-webkit-keyframes slideRL {from {left: 400px} to {left: 50px}}
 @-keyframes slideRL {from {left: 400px} to {left: 50px}}
 
+/* Up-Down movement */
+
 @-ms-keyframes slideUD {from {top: 50px} to {top: 400px}}
 @-moz-keyframes slideUD {from {top: 50px} to {top: 400px}}
 @-webkit-keyframes slideUD {from {top: 50px} to {top: 400px}}
 @-keyframes slideUD {from {top: 50px} to {top: 400px}}
+
+/* Down-Up movement */
 
 @-ms-keyframes slideDU {from {top: 400px} to {top: 50px}}
 @-moz-keyframes slideDU {from {top: 400px} to {top: 50px}}
